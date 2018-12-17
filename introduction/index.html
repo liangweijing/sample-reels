@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--移动设备优先，保证绘制和缩放-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">100%显示无法缩放-->
+		<title>响应式简历-梁炜婧</title>
+
+		<link rel="icon" href="favicon.ico" tppabs="http://v3.bootcss.com/favicon.ico">
+
+		<!--引入最新版bootstrap核心css文件-->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<!--引入自定义css,覆盖上面的-->
+		<link rel="stylesheet" href="css/bootstrap-custom.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+
+		<script src="js/contact_me.js"></script>
+	</head>
+
+	<body>
+
+		<!--导航栏-->
+		<nav class="navbar navbar-default navbar-fixed-top ">
+			<div class="container">
+				<!--container-fluid字会顶格-->
+				<!-- logo和小屏幕按钮 -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<!--给小屏幕按钮绑定了两个事件data-toggle="collapse" data-target是导航的id-->
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+      				</button>
+					<!--<a class="navbar-brand" href="#">Brand</a>-->
+					<h3 class="navbar-brand">前端开发工程师</h3>
+				</div>
+
+				<!--导航-->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<!--锚点-->
+					<ul class="nav navbar-nav navbar-right" style="margin-top: 20px;">
+						<li>
+							<a href="#home">首页</a>
+						</li>
+						<li>
+							<a href="#basic">基本资料</a>
+						</li>
+						<li>
+							<a href="#hobby">个人爱好</a>
+						</li>
+						<li>
+							<a href="#experience">项目经验</a>
+						</li>
+						<li>
+							<a href="#contact">联系方式</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!--导航栏-->
+
+		<!--第一屏-->
+		<section id="home">
+			<div class="container-fluid ">
+
+				<!--
+						data-wow-duration="2s"动画持续时间
+						data-wow-delay="2s"动画开始时间
+						data-wow-iteration="100"重复次数
+						fadeinleft从左进入
+						fadeinup从下进入
+						fadein渐入
+						data-wow-offset="10"距离可视区域多远开始执行动画
+					-->
+				<div class="row wow bounce" data-wow-duration="2s">
+
+					<div class=" col-md-offset-2 col-md-8 col-xs-12">
+						<h1>简历
+							<span class="title">-前端工程师</span>
+							</h1>
+						<p>喜欢技术，热爱<span style="color:#40D2B1">挑战</span></p>
+					</div>
+
+				</div>
+			</div>
+			<a class="arrow wow pulse" data-wow-iteration="1000" href="#basic">
+
+				<span id="arrow1"></span>
+				<span id="arrow2"></span>
+
+			</a>
+		</section>
+		<!--第一屏-->
+
+		<!--基本信息技能巨幕-->
+		<section id="basic">
+			<!--<div class="container">-->
+				<div class="row">
+					<div class="col-md-offset-2 col-md-8">
+						<h2 id="number">基本<span>&nbsp;资料</span></h2>
+						<hr />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-1 col-xs-6">
+						<!--加了事件触发动画就不能在这里写死wow swing-->
+					<img id="img1" class=" img-thumbnail  " data-wow-duration="2s" data-wow-offset="70" alt="64x64" src="img/cat.jpeg" style="display:block;width: 94px; height: 94px;">
+					</div>
+					<div class="col-md-3 col-xs-6">
+					<h3>个人信息</h3>
+					<p><span>姓名：梁炜婧</span><br />
+						<span>籍贯：广东省湛江</span><br />
+						<span>性别：女</span><br />
+						<span>微信：lwj88135810</span></p>
+				
+				</div>
+				<div class="col-md-1 col-xs-6">
+					<img id="img2" class=" img-thumbnail " data-wow-duration="2s" data-wow-offset="70" alt="64x64" src="img/school.gif" style="width: 94px; height: 94px;">
+				</div>
+				<div class="col-md-3 col-xs-6" >
+					<h3>学校专业</h3>
+					<p><span>学校：青岛到科技大学</span> <br>
+						<span>专业：计算机科学与技术</span><br />
+						<span>主修课程:数据结构，计算机网络,计算机组成原理，操作系统</span><br>
+						<span>数据库：SQLServer，Mysql</span></p>
+				</div>
+				<div class="col-md-1 col-xs-6" >
+					<img id="img3" class=" img-thumbnail " data-wow-duration="2s" data-wow-offset="70" alt="64x64" src="img/office.jpg" style="width: 94px; height: 94px;">
+				</div>
+				<div class="col-md-3 col-xs-6" >
+					<h3>技术知识</h3>
+					<p><span>后端：java熟练,c#、shell了解</span><br>
+						<span >前端：HTML&amp;CSS<br>JavaScript,JQuery。自学了Ajax,bootsrap框架和node.js。</span><br></p>
+				</div>
+				</div>
+				
+		
+			
+		</section>
+		<!--技能特长巨幕-->
+
+		<!--爱好轮播图-->
+		<div class="container" id="hobby">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8">
+					<h2 id>个人<span>&nbsp;爱好</span></h2>
+					<hr />
+				</div>
+
+			</div>
+
+			<!--导航浮动会压住轮播图一部分，不能给导航清楚浮动样式会变化，所以给轮播图的盒子加margin-top值就是导航的高度，之前给导航设了高-->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<!--class="img-responsive" 加上图片响应比较好，因为图太大了-->
+						<img class="img-responsive" src="img/program2.jpg" alt="..." style="display: block; width:100% ; height: 100%;">
+						<div class="carousel-caption">
+							<h3 class=>programing</h3>
+							<p>我喜欢前端的工作，不仅有趣而且让我很有成就感。</p>
+						</div>
+					</div>
+					<div class="item ">
+						<img class="img-responsive" src="img/sport.jpeg" alt="..." style="display: block; width:100% ;height: 100%; ">
+						<div class="carousel-caption">
+							<h3>running girl</h3>
+							<p>我是一个热爱健身的人，高考结束130斤的我通过努力运动减了30多斤。从此爱上了运动后一身清爽健步如飞的感觉。我喜欢游泳，打球，也会照着视频做瑜伽。</p>
+						</div>
+					</div>
+					<div class="item">
+						<img class="img-responsive" src="img/movie2.jpg" alt="..." style="display: block; width:100% ;height: 100%;">
+						<div class="carousel-caption">
+							<h3>Movies</h3>
+							<p>关于电影我不仅是看而且非常喜欢写影评，在简历中我也提到过我给电影公众号《电影生活》写过二十多次稿子。美剧英剧日剧我都看，在看影视剧的同时我发现听力的能力真的大幅度提高</p>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<!--轮播图-->
+
+		<!--阿婆私房菜模态框-->
+		<div class="modal fade" id="myModal" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<!--远程加载替换这里-->
+
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal"><span>&times;</span></button>
+						<h4 class="modal-title" style="font-weight: 700;">阿婆私房菜</h4>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid" style="text-align: center;">
+							<div class="row">
+								<span class="modalfram" style="font-weight: 700;font-size: 18px;">前台首页：</span>用户登录、用户注册、用户退出、查看订单、加入购物车、销售排行榜
+							</div>
+							<div class="row">
+								<!--<div class="col-md-1"></div>-->
+								<div class="col-md-12">
+									<img class="modalimg" src="img/grandmamdish1.png" alt="" style="display: block;width: 100%;" />
+								</div>
+								<!--<div class="col-md-1"></div>-->
+							</div>
+							<div class="row">
+								<span class="modalfram" style="font-weight: 700;font-size: 18px;">后台登录页：</span>管理员登录
+							</div>
+							<div class="row">
+								<!--<div class="col-md-1"></div>-->
+								<div class="col-md-12">
+									<img class="modalimg" src="img/grandmamdish2.png" alt="" style="display: block;width: 100%;" />
+								</div>
+								<!--<div class="col-md-1"></div>-->
+							</div>
+							<div class="row">
+								<span class="modalfram" style="font-weight: 700;font-size: 18px;">后台页面：</span>菜单管理、销售订单管理、公告管理、菜品类型管理、系统用户管理
+							</div>
+							<div class="row">
+								<!--<div class="col-md-1"></div>-->
+								<div class="col-md-12">
+									<img class="modalimg" src="img/grandmamdish3.png" alt="" style="display: block;width: 100%;" />
+								</div>
+								<!--<div class="col-md-1"></div>-->
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-info" data-dismiss="modal">关闭</button>
+					</div>
+					<!--远程加载替换这里-->
+
+				</div>
+			</div>
+		</div>
+		<!--阿婆私房菜模态框-->
+
+		<!--shell编程模态框-->
+		<div class="modal fade" id="myModal2" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!--远程加载替换这里-->
+
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal"><span>&times;</span></button>
+						<h4 class="modal-title" style="font-weight: 700;">shell编程——用户管理</h4>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid" style="text-align: center;">
+							<div class="row">
+								<span class="modal-fram" style="font-weight: 700;">菜单首页：</span>显示用户信息，查询特定信息，添加用户，删除用户，查看密码
+							</div>
+							<div class="row">
+
+								<div class="col-md-12">
+									<img class="modal-img" src="img/linux1.png" alt="" style="display: block;width: 100%;" />
+								</div>
+
+							</div>
+							<div class="row">
+								<span class="modal-fram" style="font-weight: 700;">格式化查看用户信息</span>
+							</div>
+							<div class="row">
+
+								<div class="col-md-12">
+									<img class="modal-img" src="img/linux2.png" alt="" style="display: block;width: 100%;" />
+								</div>
+
+							</div>
+							<div class="row">
+								<span class="modal-fram" style="font-weight: 700;">搜索关键字test</span>
+							</div>
+							<div class="row">
+
+								<div class="col-md-12">
+									<img class="modal-img" src="img/linux3.png" alt="" style="display: block;width: 100%;" />
+								</div>
+
+							</div>
+							<div class="row">
+								<span class="modal-img" class="modal-fram" style="font-weight: 700;">添加用户</span>
+							</div>
+							<div class="row">
+
+								<div class="col-md-12">
+									<img class="modal-img" src="img/linux4.png" alt="" style="display: block;width: 100%;" />
+								</div>
+
+							</div>
+							<div class="row">
+								<span class="modal-fram" style="font-weight: 700;">删除用户</span>
+							</div>
+							<div class="row">
+
+								<div class="col-md-12">
+									<img class="modal-img" src="img/linux5.png" alt="" style="display: block;width: 100%;" />
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-info" data-dismiss="modal">关闭</button>
+					</div>
+
+					<!--远程加载替换这里-->
+
+				</div>
+			</div>
+		</div>
+		<!--shell编程模态框-->
+
+		<!--项目经验类似缩略图，链接-->
+		<div class="container-fluid bs-example" data-example-id="thumbnails-with-custom-content" id="experience">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8">
+					<h2>项目<span>&nbsp;经验</span></h2>
+					<hr />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="50">
+					<a href="#" data-target="#myModal" role="button" data-toggle="modal">
+						<div class="thumbnail">
+							<!--图片大小定死则无法响应 -->
+							<img src="img/food.jpeg" class="img-circle img-responsive" style="display: block; width: 150px;height: 150px;">
+							<div class="caption">
+								<h3 id="thumbnail-label"> 阿婆私房菜</h3>
+								<p>javaweb+mysql+ajax</p>
+							</div>
+							<div class="fdj">
+							</div>
+						</div>
+
+					</a>
+
+				</div>
+				<div class="col-sm-12 col-md-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="50">
+					<a href="jingdong/index.html" target="_blank">
+						<div class="thumbnail">
+							<img src="img/jingdong.jpg" class="img-circle img-responsive" style="width: 150px;height: 150px;display: block;">
+							<div class="caption">
+								<h3 id="thumbnail-label">模仿京东首页</h3>
+								<p>html+css+js</p>
+							</div>
+							<div class="fdj">
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-12 col-md-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="50">
+					<a href="#" data-target="#myModal2" role="button" data-toggle="modal">
+						<div class="thumbnail">
+							<img src="img/linux.jpg" class="img-circle img-responsive" style="width: 150px;height: 150px;display: block;">
+							<div class="caption">
+								<h3 id="thumbnail-label">shell编程——用户管理</h3>
+								<p>shell</p>
+							</div>
+							<div class="fdj">
+							</div>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<!--项目经验类似缩略图，链接-->
+
+		<!--联系我-->
+		<div class="container-fluid" id="contact">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8">
+					<h2>联系<span>&nbsp;方式</span></h2>
+					<hr />
+				</div>
+			</div>
+
+			<!--外层通栏，里层是container-->
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-5">
+						<h3><span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+							 &emsp;联系我吧</h3>
+						<p>我是一个性格比较开朗的人，很爱说话。喜动的同时又很喜静。自学能力较强，喜欢学习新的知识。善于反思和总结,热爱编程风一样的女子。</p>
+						<address>
+						<p><span class="glyphicon glyphicon-earphone" aria-hidden="true">
+							&emsp;联系电话：17864215306</span></p>
+						<p><span class="glyphicon glyphicon-envelope" aria-hidden="true">
+							&emsp;邮箱：623201572@qq.com</span></p>
+						
+					</address>
+					</div>
+					<div class="col-md-1"></div>
+					<div class="col-md-6">
+						<form onsubmit="return check()">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="exampleInputPassword1">姓名</label>
+									<input id="username" type="text" class="form-control" id="exampleInputPassword1" placeholder="您的姓名">
+									<span id="usernameinfo" style="color: red;"></span>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="exampleInputEmail1">Email</label>
+									<div class="input-group">
+										<span class="input-group-addon" id="basic-addon1">@</span>
+										<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" aria-describedby="basic-addon1">
+										<span id="emailinfo" style="color: red;"></span>
+									</div>
+
+								</div>
+							</div>
+							<div class="col-md-12">
+								<textarea id="content" name="usercontent" rows="4" class="form-control" style="width: 100%;" placeholder="内容"></textarea>
+								<span id="textareainfo" style="color: red;"></span>
+							</div>
+							<div class="col-md-offset-5 col-md-2">
+
+								<input type="submit" class="form-control" value="提交" />
+							</div>
+
+						</form>
+						<div class="col-md-12">
+
+							<div id="successinfo" class="alert alert-success alert-dismissible" role="alert" style="margin-top: 5px;display: none;">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<strong>SUCCESS!</strong> I have got your message.Thanks for your contact.
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--联系我-->
+
+		<!--底部footer-->
+		<div class="container-fluid " id="footer ">
+			<div class="row ">
+				<div class=" col-xs-12" style="text-align: center;">
+					Copyright &copy; 2018 &emsp;作者： Aaliyah &nbsp;前端工程师
+				</div>
+			</div>
+
+		</div>
+		<!--底部footer-->
+
+		<!--引入JQuery，在js之前-->
+		<script type="text/javascript " src="js/jquery-1.11.0.js "></script>
+		<!--引入最新的bootstrap核心JavaScript文件-->
+		<script type="text/javascript " src="js/bootstrap.min.js "></script>
+
+		<!--
+			
+		引入js单页面导航插件
+		点击导航链接不是生硬的跳转，是慢慢的，并且设置偏移量（比如导航高60），每个模块可以恰好出现在
+		导航下方，不被其遮住
+		/*对导航进行事件添加*/
+			$(".nav ").singlePageNav({
+				offset: 60模块的向上偏移量
+			});
+		-->
+		<script src="js/jquery.singlePageNav.min.js "></script>
+		<!--引入动画js插件(结合annimate.css使用)-->
+		<script src="js/wow.min.js "></script>
+
+		<script>
+			/*对导航进行事件添加*/
+			$(".nav ").singlePageNav({
+				offset: 60
+			});
+			/*导航缩小后会遮住页面，选择要去的区域后隐藏导航的下拉框*/
+			$('.navbar-collapse a').click(function() {
+				$('.navbar-collapse').collapse('hide'); /*向上折叠隐藏*/
+			});
+
+			//动画
+			new WOW().init();
+		</script>
+		<script>
+			function myid(id){
+				return document.getElementById(id);
+			}
+			myid('img1').onmouseenter=function(){
+					this.className="img-thumbnail";
+				
+			};
+			myid('img1').onmouseleave=function(){
+				if(this.className="img-thumbnail"){
+					this.className="img-thumbnail wow swing animated";
+				}
+			};
+			myid('img2').onmouseenter=function(){
+					this.className="img-thumbnail";
+				
+			};
+			myid('img2').onmouseleave=function(){
+				if(this.className="img-thumbnail"){
+					this.className="img-thumbnail wow swing animated";
+				}
+			};
+			myid('img3').onmouseenter=function(){
+					this.className="img-thumbnail";
+				
+			};
+			myid('img3').onmouseleave=function(){
+				if(this.className="img-thumbnail"){
+					this.className="img-thumbnail wow swing animated";
+				}
+			};
+			
+		</script>
+	</body>
+
+</html>
